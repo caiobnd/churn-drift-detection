@@ -7,8 +7,10 @@ data/
 #Ignorando artefatos
 model/
 mlruns/
-mlartifacts/
+reports/
 
 #Python
 __pycache__/
 *.pyc
+
+#Ignorando relatório
