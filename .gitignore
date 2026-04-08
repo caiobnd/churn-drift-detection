@@ -1,16 +1,30 @@
-#Ignorando ambiente virtual
+# Ignorando ambiente virtual
 .venv/
 
-#Ignorando os dados
-data/
+# --- CONFIGURAÇÃO DE DADOS ---
+# Ignora tudo dentro de data, exceto as pastas current e reference
+data/*
+!data/current/
+!data/reference/
 
-#Ignorando artefatos
-model/
+# Ignora o conteúdo de current e reference
+data/current/*
+!data/current/.gitkeep
+data/reference/*
+!data/reference/.gitkeep
+
+# --- CONFIGURAÇÃO DE ARTEFATOS ---
+# Ignora o conteúdo de model
+model/*
+!model/.gitkeep
+
+# Ignora o conteúdo de reports
+reports/*
+!reports/.gitkeep
+
+# Outros artefatos
 mlruns/
-reports/
 
-#Python
+# --- PYTHON ---
 __pycache__/
 *.pyc
-
-#Ignorando relatório
